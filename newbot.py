@@ -43,7 +43,8 @@ def get_msg(update,context):
 	headers = {'authorization': "paste Your fast2sms api authentication key here",'Content-Type': "application/x-www-form-urlencoded",'Cache-Control': "no-cache"}
 	response = requests.request("POST", url,
 	data=payload, headers=headers)
-	print(response.text)
+	context.bot.send_message(chat_id = update.effective_chat.id, text=str(response.text))
+	
 
 start_handler= CommandHandler("start",start)
 dispatcher.add_handler(start_handler)
