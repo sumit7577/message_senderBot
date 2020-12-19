@@ -1,0 +1,2 @@
+# message_senderBot
+A sms sender Bot for telegram built using python telegram bot wrapper. To use this simply clone the repo then add ur fast2sms api link then You have to paste your bot token that you taken from botfather and thn yiu are good to go for deployment. Deplo on heroku in webhook mode the instructions are given in script.Please fell free to repot bug if you found any it will help us to improve 
